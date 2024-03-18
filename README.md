@@ -9,7 +9,8 @@ This documentation provides an overview and setup instructions for a serverless 
 
 Below is the architecture diagram representing the serverless setup:
 
-![Serverless Architecture](path-to-image/Ar.jpg)
+![Ar](https://github.com/HashTekSolutions/s3-lambda-api/assets/113921841/f2efefb6-48ca-4275-96a6-c14b8a4694aa)
+
 
 The architecture includes the following components:
 - **User**: Initiates the process by making a request to the API Gateway.
