@@ -38,13 +38,13 @@ AWS CLI with appropriate access rights.
 Terraform installed on your local machine.
 
 ### Deployment Steps:
-###### Initialization:
+##### Initialization:
 Navigate to the environment directory (`env/dev`) and run `terraform init` to initialize Terraform.
-###### Plan:
+##### Plan:
 Execute `terraform plan` to review the changes to be applied.
-###### Apply:
+##### Apply:
 Use `terraform` apply to provision the resources on AWS.
-###### Endpoint URL
+##### Endpoint URL
 Lambda API Endpoint: ** "https://mmt73opuqa.execute-api.eu-north-1.amazonaws.com/dev/retrieve_most_recent_object_dev"
 This endpoint allows fetching the latest S3 object as per the serverless setup.
 
@@ -52,7 +52,7 @@ This endpoint allows fetching the latest S3 object as per the serverless setup.
 The provided endpoint URL is specific to the development environment of this project and might not be publicly accessible.
 
 ### Tear Down Instructions
-######To tear down the deployed infrastructure:
+##### To tear down the deployed infrastructure:
 
 Navigate to the environment directory (`env/dev`).
 Run `terraform destroy`
@@ -65,7 +65,7 @@ Ensure careful consideration before executing the tear down command as it will r
 
 ### 1. Service/Component Choices and Alternatives:
 
-###### Serverless Architecture (AWS Lambda): 
+##### Serverless Architecture (AWS Lambda): 
 Chosen for scalability, cost-efficiency, and faster development compared to self-managed servers or containerized applications.
 Storage (Amazon S3): Ideal for storing large, unstructured data objects at scale and with high durability, compared to relational databases or file systems.
 
@@ -125,7 +125,7 @@ Encrypted data at rest in S3 and KMS for key management. (Both AWS and Google Cl
 S3 replication and potential Lambda versioning offer some level of fault tolerance. (Both frameworks emphasize resilience)
 
 
-# In Conclusion
+## In Conclusion
 
 This detailed breakdown of the README.md provides a comprehensive understanding of the serverless infrastructure project on AWS. By leveraging serverless components and Terraform for infrastructure management, the project offers scalability, cost-efficiency, and faster development cycles. If you're tasked with managing this project, ensure you have the required AWS credentials and Terraform installed to proceed with deployments.
 
