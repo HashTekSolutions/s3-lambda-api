@@ -1,4 +1,4 @@
-# AWS Serverless Infrastructure Repository
+# AWS Serverless Infrastructure
 
 
 ### Description
