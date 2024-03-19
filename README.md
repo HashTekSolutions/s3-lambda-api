@@ -9,27 +9,27 @@ Below is the architecture diagram representing the serverless setup:
 
 
 # Components we used here:
-## AWS Lambda Functions: 
+### AWS Lambda Functions: 
 The project utilizes two Lambda functions:
-## Function 1 (Triggered by EventBridge): 
+### Function 1 (Triggered by EventBridge): 
 This function likely handles scheduled tasks. EventBridge, a serverless event bus, triggers this function based on a predefined schedule. The function might perform actions like data encryption using AWS KMS.
-## Function 2 (Triggered by API Gateway):
+### Function 2 (Triggered by API Gateway):
 This function handles user requests received through the API Gateway. It retrieves data, possibly fetching encrypted content from Amazon S3.
-## Amazon S3:
+### Amazon S3:
 This service acts as the storage layer. It securely stores the data objects in an encrypted format.
-## AWS KMS: 
+### AWS KMS: 
 This service manages encryption keys used to secure the data at rest in S3. It ensures only authorized entities can access the data.
-## API Gateway:
+### API Gateway:
 This service serves as the front door for user requests. It routes incoming requests to the appropriate Lambda function based on predefined configurations.
 
 ## Architectural Advantages
 This serverless architecture offers several benefits:
 
-## Scalability: 
+### Scalability: 
 AWS automatically scales the Lambda functions based on traffic, ensuring smooth operation even during high loads.
-## Cost-Effectiveness:
+### Cost-Effectiveness:
 You only pay for the resources you use. Since server management is eliminated, the infrastructure incurs minimal cost during idle periods.
-## Increased Developer Agility:
+### Increased Developer Agility:
 Serverless development allows developers to focus on writing code without worrying about server provisioning and maintenance.
 
 ## Project Structure Analysis
@@ -48,15 +48,17 @@ providers.tf: This file specifies the Terraform providers used for interacting w
 # Deployment Steps
 The README outlines the deployment process using the Terraform CLI:
 
-## Initialization: 
+### Initialization: 
 Run terraform init within the environment directory (e.g., env/dev) to initialize Terraform. This downloads and caches the necessary Terraform plugins required to interact with AWS services.
-## Planning:
+### Planning:
 Run terraform plan to review the changes Terraform will make to your AWS infrastructure based on the current configuration. This allows you to identify any potential issues before applying the changes.
-## Apply: 
+### Apply: 
 If the plan looks good, run terraform apply to provision the infrastructure resources on AWS. This creates the S3 bucket, Lambda functions, IAM roles, and other resources as defined in the Terraform configuration.
+
 ## Verification: 
 After successful deployment, use the provided endpoint URL (lambda_api_endpoint) to test the API functionality. This URL points to the specific Lambda function that retrieves data from S3.
-## Important Note:
+
+### Important Note:
 The provided endpoint URL is specific to the development environment of this project and might not be publicly accessible.
 
 # In Conclusion
