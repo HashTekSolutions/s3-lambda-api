@@ -40,7 +40,6 @@ The project leverages Terraform for infrastructure management. Terraform offers 
 
 
 ## The folder structure promotes modularity and reusability:
-## Project Structure
 
 The Terraform project is organized as follows:
 
@@ -74,7 +73,6 @@ terraform-project/
 2. **Plan**: Execute `terraform plan` to review the changes to be applied.
 3. **Apply**: Use `terraform apply` to provision the resources on AWS.
 
-4. 
 ## Verification: 
 After successful deployment, use the provided endpoint URL (lambda_api_endpoint) to test the API functionality. This URL points to the specific Lambda function that retrieves data from S3.
 
