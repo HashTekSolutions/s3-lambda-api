@@ -80,8 +80,7 @@ Potentially chosen for its flexibility in event routing and centralized manageme
 
 ### 2. Cost Scaling with Traffic Increase:
 
-##### Pay-per-use model:
-You are charged for Lambda executions, S3 storage used, KMS requests, and API Gateway requests.
+** Pay-per-use model: ** You are charged for Lambda executions, S3 storage used, KMS requests, and API Gateway requests.
 ##### Automatic scaling: 
 Lambda scales functions automatically based on traffic, minimizing costs during low-traffic periods.
 ##### S3 storage costs:
