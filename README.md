@@ -39,11 +39,11 @@ Terraform installed on your local machine.
 
 ### Deployment Steps:
 ###### Initialization:
-Navigate to the environment directory (env/dev) and run terraform init to initialize Terraform.
+Navigate to the environment directory (`env/dev`) and run `terraform init` to initialize Terraform.
 ###### Plan:
-Execute terraform plan to review the changes to be applied.
+Execute `terraform plan` to review the changes to be applied.
 ###### Apply:
-Use terraform apply to provision the resources on AWS.
+Use `terraform` apply to provision the resources on AWS.
 ###### Endpoint URL
 Lambda API Endpoint: ** "https://mmt73opuqa.execute-api.eu-north-1.amazonaws.com/dev/retrieve_most_recent_object_dev"
 This endpoint allows fetching the latest S3 object as per the serverless setup.
